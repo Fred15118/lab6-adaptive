@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+button {
+  margin: 0;
+}
+body {
+  font-family: "Nunito Sans";
+  font-style: normal;
+}
+.container {
+  max-width: 350 px;
+  border: turquoise 1px solid;
+}
+.hero {
+  background-color: #0b4141;
+  color: #ffccbc;
+  padding-bottom: 80px;
+}
+.hero__img {
+  max-width: 318px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 50px;
+}
+.hero__title {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.15;
+  max-width: 320px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 32px;
+  margin-top: 30px;
+}
+.hero__filler {
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 320px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+}
+.hero__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 34px;
+  width: 300px;
+  height: 54px;
+  color: inherit;
+  background-color: inherit;
+  border: 2px solid #ffccbc;
+  border-radius: 100px;
+  margin: 48px 15px 0px 15px;
+}
+.opportunites {
+  padding-top: 50px;
+  background-color: #fff;
+  color: #0b4141;
+}
+.opportunites__img {
+  width: 350px;
+  height: 349px;
+  margin-bottom: 50px;
+}
+.opportunites__title {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.15;
+  max-width: 320px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 32px;
+  color: #ffccbc;
+}
+.opportunites__filler {
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 320px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+}
