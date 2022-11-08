@@ -12,16 +12,21 @@ body {
   font-style: normal;
 }
 .container {
-  max-width: 350 px;
-  border: turquoise 1px solid;
+  max-width: 350px;
+  margin: 0 auto;
 }
 .hero {
   background-color: #0b4141;
   color: #ffccbc;
   padding-bottom: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.hero__wrap {
+  margin-top: 30px;
 }
 .hero__img {
-  max-width: 318px;
+  width: 318px;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 50px;
@@ -34,7 +39,6 @@ body {
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 32px;
-  margin-top: 30px;
 }
 .hero__filler {
   margin-left: 15px;
@@ -62,6 +66,8 @@ body {
   padding-top: 50px;
   background-color: #fff;
   color: #0b4141;
+  justify-content: center;
+  align-items: center;
 }
 .opportunites__img {
   width: 350px;
@@ -85,4 +91,188 @@ body {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.33;
+}
+.wrap {
+  margin-top: 32px;
+  margin-left: 15px;
+  color: inherit;
+  display: flex;
+}
+.wrap__difference {
+  margin-top: 32px;
+  margin-left: 15px;
+  color: inherit;
+  display: flex;
+}
+.wrap__icon {
+  fill: currentColor;
+}
+.wrap__filler {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-left: 16px;
+}
+.difference {
+  padding-top: 50px;
+  background-color: #fff;
+  color: #0b4141;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.difference__img {
+  width: 350px;
+  height: 363px;
+  margin-bottom: 50px;
+}
+.difference__title {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.15;
+  max-width: 320px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 32px;
+}
+.difference__filler {
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 320px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+}
+.magic {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .opportunites {
+    display: flex;
+    flex-direction: row;
+  }
+  .opportunites__img {
+    margin-left: 16px;
+    margin-right: 36px;
+  }
+  .opportunites__wrap {
+    margin-right: 16px;
+  }
+  .difference {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .difference__img {
+    margin-right: 16px;
+    margin-left: 36px;
+  }
+  .difference__wrap {
+    margin-left: 16px;
+  }
+  .wrap__difference {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .hero {
+    padding-bottom: 0;
+  }
+  .hero__img {
+    width: 655px;
+    height: 780px;
+  }
+  .hero__title {
+    font-size: 68px;
+    line-height: 1.06;
+    max-width: 480px;
+  }
+  .hero__filler {
+    max-width: 480px;
+  }
+  .opportunites__img {
+    width: 508px;
+    height: 523px;
+  }
+  .opportunites__title {
+    font-size: 68px;
+    line-height: 1.06;
+    max-width: 480px;
+  }
+  .opportunites__filler {
+    max-width: 480px;
+  }
+  .difference__img {
+    width: 502px;
+    height: 566px;
+  }
+  .difference__title {
+    max-width: 480px;
+    font-size: 68px;
+    line-height: 1.06;
+  }
+  .difference__filler {
+    max-width: 480px;
+  }
+  .magic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.6);
+    padding-bottom: 40px;
+    padding-top: 120px;
+  }
+  .magic__img {
+    display: none;
+  }
+  .magic__title {
+    font-family: "Motter Corpus Std";
+    font-weight: bolder;
+    font-size: 80px;
+    line-height: 1.2;
+    color: #ffccbc;
+    margin-bottom: 25px;
+  }
+  .magic__filler {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    max-width: 890px;
+    color: #0b4141;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .magic__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+    color: #0b4141;
+    max-width: 575px;
+    text-align: center;
+  }
+  .magic__span {
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+  .magic {
+    padding-bottom: 0;
+  }
+  .magic__img {
+    display: block;
+  }
 }
